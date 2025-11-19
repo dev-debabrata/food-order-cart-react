@@ -19,10 +19,6 @@ export default function Meals() {
     return <Error title="Failed to fetch meals" message={error} />;
   }
 
-  // if (!data) {
-  //   return <p>No meals found.</p>
-  // }
-
   return (
     <ul className='w-[90%] max-w-6xl list-none mx-auto my-8 p-4 grid gap-4 grid-cols-3'>
       {loadedMeals.map((meal) => (

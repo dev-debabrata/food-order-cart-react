@@ -43,7 +43,9 @@ export default function Cart() {
           />
         ))}
       </ul>
-      <p className="flex justify-end my-8 text-[1.15rem] font-bold text-[#46443c]">{currencyFormatter.format(cartTotal)}</p>
+      <p className="flex justify-end my-8 text-[1.15rem] font-bold text-[#46443c]">
+        {currencyFormatter.format(cartTotal)}
+      </p>
       <p className="flex justify-end gap-4">
         <Button textOnly onClick={handleCloseCart}>
           Close

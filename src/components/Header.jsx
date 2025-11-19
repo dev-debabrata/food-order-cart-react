@@ -24,7 +24,9 @@ export default function Header() {
           src={logoImg}
           alt="A restaurant"
           className='w-16 h-16 object-contain rounded-full border-2 border-[#ffc404]' />
-        <h1 className='font-[Lato] font-bold text-[2rem] m-0 text-[#ffc404] uppercase tracking-[0.2rem]'>ReactFood</h1>
+        <h1 className='font-[Lato] font-bold text-[2rem] m-0 text-[#ffc404] uppercase tracking-[0.2rem]'>
+          ReactFood
+        </h1>
       </div>
       <nav>
         <Button textOnly onClick={handleShowCart}>
