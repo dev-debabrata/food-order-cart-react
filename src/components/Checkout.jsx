@@ -90,12 +90,13 @@ export default function Checkout() {
   return (
     <Modal open={userProgressCtx.progress === 'checkout'} onClose={handleClose}>
       <form action={formAction}>
-        <h2 className='text-xl font-bold mb-4'>Checkout</h2>
+        <h2 className='text-3xl text-center font-bold mb-4'>Checkout</h2>
         <p className='font-semibold mb-4'>Total Amount: {currencyFormatter.format(cartTotal)}</p>
 
         <Input label='Full Name' type='text' id='name' />
         <Input label='E-Mail Address' type='email' id='email' />
         <Input label='Street' type='text' id='street' />
+
         <div className='flex justify-start gap-4'>
           <Input label='Postal Code' type='text' id='postal-code' />
           <Input label='City' type='text' id='city' />

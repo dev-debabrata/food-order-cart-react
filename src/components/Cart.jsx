@@ -30,7 +30,7 @@ export default function Cart() {
       open={userProgressCtx.progress === 'cart'}
       onClose={userProgressCtx.progress === 'cart' ? handleCloseCart : null}
     >
-      <h2 className='my-4'>Your Cart</h2>
+      <h2 className='my-4 text-3xl font-bold text-center'>Your Cart</h2>
       <ul className='list-none m-0.5 p-0'>
         {cartCtx.items.map((item) => (
           <CartItem

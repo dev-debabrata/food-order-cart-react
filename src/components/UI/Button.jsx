@@ -1,6 +1,6 @@
 export default function Button({ children, textOnly, className = '', ...props }) {
   const baseClasses = textOnly
-    ? 'bg-transparent border-none text-[#ffc404] hover:text-[#ffab04]'
+    ? 'bg-transparent border-none text-[#ffc404] hover:text-[#ffab04] cursor-pointer'
     : 'cursor-pointer bg-[#ffc404] border border-[#ffc404] text-[#1f1a09] px-6 py-2 rounded hover:bg-[#ffab04] hover:border-[#ffab04]';
 
   return (

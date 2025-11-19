@@ -20,7 +20,7 @@ export default function Meals() {
   }
 
   return (
-    <ul className='w-[90%] max-w-6xl list-none mx-auto my-8 p-4 grid gap-4 grid-cols-3'>
+    <ul className='w-[90%] max-w-7xl list-none mx-auto my-8 p-4 grid gap-4 grid-cols-3'>
       {loadedMeals.map((meal) => (
         <MealItem key={meal.id} meal={meal} />
       ))}

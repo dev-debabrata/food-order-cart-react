@@ -15,12 +15,30 @@ export default function Modal({ children, open, onClose, className = '' }) {
   }, [open]);
 
   return createPortal(
-    <dialog
-      ref={dialog}
-      className={`bg-[#e4ddd4] rounded-md shadow-lg p-4 w-[80%] max-w-2xl mx-auto mt-10 animate-fade-slide-up ${className}`}
-      onClose={onClose}>
-      {children}
-    </dialog>,
+    <>
+      {open && (
+        <div className="fixed inset-0 bg-black/50 z-40" onClick={onClose}></div>
+      )}
+
+      <dialog
+        ref={dialog}
+        className={`bg-[#e4ddd4] rounded-md shadow-lg p-6 w-[80%] max-w-2xl mx-auto mt-10 animate-fade-slide-up z-50 ${className}`}
+        onClose={onClose}
+      >
+        {children}
+      </dialog>
+    </>,
     document.getElementById('modal')
   );
+
+
+  // return createPortal(
+  //   <dialog
+  //     ref={dialog}
+  //     className={`bg-[#e4ddd4] rounded-md shadow-lg p-6 w-[80%] max-w-2xl mx-auto mt-10 animate-fade-slide-up ${className}`}
+  //     onClose={onClose}>
+  //     {children}
+  //   </dialog>,
+  //   document.getElementById('modal')
+  // );
 }

@@ -22,7 +22,9 @@ export default function CartItem({
         <button
           onClick={onIncrease}
           className='cursor-pointer text-base w-6 h-6 rounded-full bg-[#312c1d] text-[#ffc404] flex justify-center items-center
-               hover:bg-[#1d1a16] hover:text-[#ffab04]'>+</button>
+               hover:bg-[#1d1a16] hover:text-[#ffab04]'>
+          +
+        </button>
       </p>
     </li>
   );
